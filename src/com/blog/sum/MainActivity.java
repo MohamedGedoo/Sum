@@ -11,14 +11,28 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
+	// Initialize variables
+
+	// ⁄—›‰«Â„ ›Ì «·Œ«—Ã ⁄·‘«‰ «ﬁœ— «‘ €· ⁄·ÌÂ„ „‰ «Ì „ﬂ«‰
 	EditText num_1, num_2;
 	Button sumNum;
 	TextView viewResult;
-	
+	int number_1, number_2, result;
 
-	public void sum_Numbers() {
+	// the clicking method to sum numbers
 
-		
+	public void sum_Numbers(View view) {
+
+		// « EditeText Œ–‰« «·ﬁÌ„… „‰ «·
+		// int À„ Ê÷⁄‰«Â« ›Ì «·
+		number_1 = Integer.parseInt(num_1.getText().toString());
+		number_2 = Integer.parseInt(num_2.getText().toString());
+
+		result = number_1 + number_2;
+
+		// TextView «Œ–‰« «·ﬁÌ„… Ê⁄—÷‰«Â« œ«Œ· «·
+		viewResult.setText(String.valueOf(result));
+
 	}
 
 	@Override
@@ -30,8 +44,6 @@ public class MainActivity extends Activity {
 		num_2 = (EditText) findViewById(R.id.editText2);
 		sumNum = (Button) findViewById(R.id.button1);
 		viewResult = (TextView) findViewById(R.id.textView1);
-		
-		
 
 	}
 

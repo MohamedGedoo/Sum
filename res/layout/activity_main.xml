@@ -35,8 +35,7 @@
         android:layout_below="@+id/editText2"
         android:layout_marginRight="67dp"
         android:layout_marginTop="58dp"
-        android:text="@string/sumn"
-        
+        android:text="@string/sumn"        
         android:onClick="sum_Numbers" />
 
     <TextView
